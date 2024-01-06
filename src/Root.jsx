@@ -1,18 +1,18 @@
 import Topbar from './components/topbar/Topbar';
 import Sidebar from './components/sidebar/Sidebar';
 import './app.css';
-import Home from './pages/home/Home';
+import { Outlet } from 'react-router-dom';
 
-function App() {
+function Root() {
   return (
     <div className="App">
       <Topbar />
       <div className="container">
         <Sidebar />
-        <Home />
+        <Outlet />
       </div>
     </div>
   );
 }
 
-export default App;
+export default Root;
