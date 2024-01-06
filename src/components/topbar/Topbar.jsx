@@ -9,7 +9,7 @@ export default function Topbar() {
     <div className="topbar">
       <div className="topbarWrapper">
         <div className="topLeft">
-          <span className="logo">CityAdmin</span>
+          <div className="logo">Techit-Together</div>
         </div>
         <div className="topRight">
           {/* topbarIcon */}
