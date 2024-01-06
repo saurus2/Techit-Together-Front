@@ -43,7 +43,9 @@
 }
 
 .sidebar {
-  flex: 1;
+  flex: 250px;
+  flex-grow: 0;
+  flex-shrink: 0;
   height: calc(100vh - 50px);
   background-color: rgb(240, 239, 239);
 
