@@ -8,7 +8,7 @@ function Root() {
     <div className="App">
       <Topbar />
       <div className="container">
-        <Sidebar />
+        {/* <Sidebar /> */}
         <Outlet />
       </div>
     </div>
