@@ -5,7 +5,7 @@ import "./app.css";
 import { RouterProvider, createHashRouter } from "react-router-dom";
 import Team from "./pages/team/Team.jsx";
 import Home from "./pages/home/Home.jsx";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import Login from "./pages/home/Login.jsx";
 
 const router = createHashRouter([
   {
@@ -20,16 +20,16 @@ const router = createHashRouter([
         path: "/team/:team",
         element: <Team />,
       },
+      {
+        path: "/login",
+        element: <Login />,
+      },
     ],
   },
 ]);
 
-const queryClient = new QueryClient();
-
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <QueryClientProvider client={queryClient}>
-      <RouterProvider router={router} />
-    </QueryClientProvider>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
