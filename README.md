@@ -16,5 +16,6 @@ Rechart Installatiown Commend: npm install recharts
 ## Commands
 Install vite
 - npm i
+
 Running
 - npm run dev
