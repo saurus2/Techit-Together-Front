@@ -1,29 +1,29 @@
-import './sidebar.css';
+import "./sidebar.css";
 // https://mui.com/ icon address website
-import HomeWorkIcon from '@mui/icons-material/HomeWork';
-import TrendingUpIcon from '@mui/icons-material/TrendingUp';
-import PersonOutlineIcon from '@mui/icons-material/Group';
-import StorefrontIcon from '@mui/icons-material/Storefront';
-import LocalAtmIcon from '@mui/icons-material/Paid';
-import BarChartIcon from '@mui/icons-material/BarChart';
+import HomeWorkIcon from "@mui/icons-material/HomeWork";
+import TrendingUpIcon from "@mui/icons-material/TrendingUp";
+import PersonOutlineIcon from "@mui/icons-material/Group";
+import StorefrontIcon from "@mui/icons-material/Storefront";
+import LocalAtmIcon from "@mui/icons-material/Paid";
+import BarChartIcon from "@mui/icons-material/BarChart";
 
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation } from "react-router-dom";
 
 const useUser = () => {
   return {
-    name: 'John Doe',
-    myTeam: 'likelion-sjsu-2023',
+    name: "John Doe",
+    myTeam: "likelion-sjsu-2023",
   };
 };
 
 function SideBarNavList({ to, children }) {
   const location = useLocation();
 
-  const classname = location.pathname === to ? 'active ' : '';
+  const classname = location.pathname === to ? "active " : "";
 
   return (
     <Link to={to}>
-      <li className={classname + 'sidebarListItem'}>{children}</li>
+      <li className={classname + "sidebarListItem"}>{children}</li>
     </Link>
   );
 }
@@ -38,7 +38,7 @@ export default function Sidebar() {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Dashboard</h3>
           <ul className="sidebarList">
-            <SideBarNavList to={'/'}>
+            <SideBarNavList to={"/"}>
               <HomeWorkIcon className="sidebarIcon" />
               Home
             </SideBarNavList>
