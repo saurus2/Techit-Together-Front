@@ -12,3 +12,9 @@ Currently, two official plugins are available:
 Vite Installation Commend: npm install vite
 Router Installation Commend: npm install react-router-dom --save
 Rechart Installatiown Commend: npm install recharts
+
+## Commands
+Install vite
+- npm i
+Running
+- npm run dev
