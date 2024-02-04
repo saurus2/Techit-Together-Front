@@ -3,8 +3,8 @@
   display: flex;
   justify-content: space-between;
 }
-
 /* Making CSS Easliy https://html-css-js.com/css/generator/box-shadow/ */
+
 .featuredItem {
   flex: 1;
   margin: 0 20px;
@@ -43,6 +43,6 @@
 }
 
 .featuredSub {
-  font-size: 14px;
-  color: grey;
+    font-size: 14px;
+    color: grey;
 }
