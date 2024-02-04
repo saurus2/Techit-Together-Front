@@ -1,0 +1,31 @@
+.community{
+        flex: 1;
+        margin: 0 20px;
+        padding: 30px;
+        border-radius: 10px;
+        cursor: pointer;
+
+        -webkit-box-shadow: 0px 0px 12px -1px #000000;
+        box-shadow: 0px 0px 12px -1px #000000;
+}
+
+.title{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.number1{
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.number2{
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.number3{
+    font-size: 18px;
+    margin-left: 20px;
+}
