@@ -12,7 +12,7 @@ export default function Home() {
     <div className="home">
       <CircleChart />
       {/* <FeaturedInfo /> */}
-    <Top_Community />
+      <Top_Community />
       <Chart
         data={userData}
         title="User Analytics"
