@@ -35,6 +35,7 @@ class CircleChart extends React.Component {
         return (
             <div className="circleChart">
                 <h1>Circle Chart</h1>
+                
                 <div className="firstCircleChart">
                     <PieChart width={300} height={300}>
                         <Pie
