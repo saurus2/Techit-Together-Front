@@ -14,27 +14,38 @@ export default function Topbar() {
   useEffect(() => {
     // Set state only when the component mounts
     setIsLoggedIn(false);
-    setUsername("..");
+    setUsername("");
   }, []); // Empty dependency array ensures this effect runs only once
 
   const logIn = () => {
     navigate("/login");
   };
 
-  // const logOut = () => {
-  //   setIsLoggedIn(false);
-  //   setUsername(""); // Reset username
-  // };
+  const logOut = () => {
+    setIsLoggedIn(false);
+    setUsername(""); // Reset username
+  };
+
+  const homeNav = () => {
+    navigate("/");
+  };
 
   return (
     <div className="topbar">
       <div className="topbarWrapper">
         <div className="topLeft">
-          <div className="logo">Techit-Together</div>
+          <div onClick={homeNav} className="logo">
+            Techit-Together
+          </div>
         </div>
         <div className="topRight">
           {isLoggedIn ? (
-            <div className="topbarUsername">Hello, {username}</div>
+            <div>
+              <div className="topbarUsername">Hello, {username}</div>
+              <button onClick={logOut} className="logout">
+                Log out
+              </button>
+            </div>
           ) : (
             <div className="topbarUsername">Hello, Guest</div>
           )}
