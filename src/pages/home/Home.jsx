@@ -1,11 +1,13 @@
-import Chart from '../../components/chart/Chart';
-import FeaturedInfo from '../../components/featureInfo/Featuredinfo';
+// import Chart from '../../components/chart/Chart';
+// import FeaturedInfo from '../../components/featureInfo/Featuredinfo';
 import './home.css';
-import { userData } from '../../dummyData';
-import { communityNames } from '../../dummyDataForCommunity';
+// import { userData } from '../../dummyData';
 import WidgetSm from '../../components/widgetSm/WidgetSm';
 import WidgetLg from '../../components/widgetLg/WidgetLg';
 import Top_community from '../../components/top_community/Top_community';
+import { communityNames } from '../../dummyDataForCommunity';
+import Your_community from '../../components/your_community/your_community';
+import { yourCommunityData } from '../../dummyDataForYourCommunity';
 
 export default function Home() {
   return (
@@ -24,7 +26,9 @@ export default function Home() {
         dataKey="Active User"
       /> */}
       <div className="homeWidgets2">
-        <WidgetSm />
+        <Your_community
+          communityData={yourCommunityData} />
+        {/* <WidgetSm /> */}
         <WidgetLg />
       </div>
     </div>
