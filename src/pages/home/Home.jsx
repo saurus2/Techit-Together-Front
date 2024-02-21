@@ -3,11 +3,14 @@
 import './home.css';
 // import { userData } from '../../dummyData';
 import WidgetSm from '../../components/widgetSm/WidgetSm';
-import WidgetLg from '../../components/widgetLg/WidgetLg';
+// import WidgetLg from '../../components/widgetLg/WidgetLg';
 import Top_community from '../../components/top_community/Top_community';
 import { communityNames } from '../../dummyDataForCommunity';
 import Your_community from '../../components/your_community/your_community';
 import { yourCommunityData } from '../../dummyDataForYourCommunity';
+import Activity from '../../components/activity/Activity';
+import { recentDatas } from '../../dummyDataForRecent';
+import { bestDatas } from '../../dummyDataForBest';
 
 export default function Home() {
   return (
@@ -29,7 +32,10 @@ export default function Home() {
         <Your_community
           communityData={yourCommunityData} />
         {/* <WidgetSm /> */}
-        <WidgetLg />
+        {/* <WidgetLg /> */}
+        <Activity
+          recentActivityData={recentDatas}
+          bestActivityData={bestDatas} />
       </div>
     </div>
   );

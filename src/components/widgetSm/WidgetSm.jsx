@@ -6,7 +6,7 @@ import VisibilityIcon from "@mui/icons-material/Visibility";
 export default function WidgetSm() {
   return (
     <div className="widgetSm">
-      <span className="widgetSmTitle">New Join Member</span>
+      <span className="widgetSmTitle">Hello, Guest</span>
       <ul className="widgetSmList">
         <li className="widgetSmListItem">
           <AccountCircleIcon className="widgetSmImg" />
