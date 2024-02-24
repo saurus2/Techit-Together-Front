@@ -7,7 +7,7 @@ import WidgetSm from '../../components/widgetSm/WidgetSm';
 // import WidgetLg from '../../components/widgetLg/WidgetLg';
 import Top_community from '../../components/top_community/Top_community';
 import { communityNames } from '../../dummyDataForCommunity';
-import Your_community from '../../components/your_community/your_community';
+import Your_community from '../../components/your_community/Your_community';
 import { yourCommunityData } from '../../dummyDataForYourCommunity';
 import Activity from '../../components/activity/Activity';
 import { recentDatas } from '../../dummyDataForRecent';
