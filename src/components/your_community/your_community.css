@@ -1,0 +1,72 @@
+.yourCommunity {
+ flex: 1;
+ margin: 0 20px;
+ padding: 30px;
+ display: flex;
+ flex-direction: column;
+ border-radius: 10px;
+ /*cursor: pointer;*/
+ -webkit-box-shadow: 0px 0px 12px -1px #000000;
+ box-shadow: 0px 0px 12px -1px #000000;
+}
+
+.title {
+ font-size: 22px;
+ font-weight: 600;
+ /* flex: 1; */
+}
+
+.columnContainer {
+ align-items: center;
+ display: flex;
+ font-weight: 680;
+ margin-top: 20px;
+}
+
+.studentTitle {
+ flex: 2;
+ text-align: center;
+ /* display: block; */
+}
+
+.student {
+ flex: 2;
+ text-align: center;
+}
+
+.percentageTitle {
+ flex: 1.2;
+ text-align: center;
+}
+
+.percentage {
+ flex: 1;
+ text-align: center;
+}
+
+.rankTitle {
+ flex: 1;
+ text-align: center;
+}
+
+.rank {
+ flex: 1;
+ text-align: center;
+}
+
+.dataContainer {
+ overflow-y: auto;
+ max-height: 200px;
+ margin-top: 10px;
+}
+
+.index {
+ display: flex;
+ /* Make it a flex container */
+ flex-direction: row;
+ /* Arrange items horizontally */
+ align-items: center;
+ /* Align items vertically */
+ margin-bottom: 5px;
+ /* Add some space between rows */
+}
