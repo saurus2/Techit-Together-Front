@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import "./signup.css"; // Import the CSS file
+import "./Signup.css"; // Import the CSS file
 
 export default function SignupPage() {
   const navigate = useNavigate();
